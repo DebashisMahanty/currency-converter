@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>currency converter</title>
+   <link rel="stylesheet" href="style.css">
+
+
+  </head>
+  <body>
+    <script type="text/javascript">
+  function convert()
+  {
+  var a=document.getElementById("inamt").value;
+  var b=document.getElementById("val1").value;
+  var c=document.getElementById("val2").value;
+  var d=0;
+  var flag=0;
+  var arr=Array.from(a);
+  for(var i=0;i<arr.length;i++){
+  if(arr[i]=='0' || arr[i]=='1' || arr[i]=='2' || arr[i]=='3' || arr[i]=='4' || arr[i]=='5' || arr[i]=='6' || arr[i]=='7' || arr[i]=='8' || arr[i]=='9')
+  {
+  flag=0;
+  }
+  else
+  {
+  flag=1;
+  }
+  }
+  if(flag==0){
+  if(b=="INR")
+  {
+  if(c=="INR")
+  {
+  d=a*1;
+  document.getElementById("outamt").value=d;
+  }
+  if(c=="USD")
+  {
+  d=a*0.013;
+  document.getElementById("outamt").value=d;
+  }
+  if(c=="EURO")
+  {
+  d=a*0.012;
+  document.getElementById("outamt").value=d;
+  }
+  if(c=="POUND")
+  {
+  d=a*0.011;
+  document.getElementById("outamt").value=d;
+  }
+  }
+
+
+  if(b=="USD")
+  {
+  if(c=="INR")
+  {
+  d=a*75.47;
+  document.getElementById("outamt").value=d;
+  }
+  if(c=="USD")
+  {
+  d=a*1;
+  document.getElementById("outamt").value=d;
+  }
+  if(c=="EURO")
+  {
+  d=a*0.91;
+  document.getElementById("outamt").value=d;
+  }
+  if(c=="POUND")
+  {
+  d=a*0.81;
+  document.getElementById("outamt").value=d;
+  }
+  }
+
+
+  if(b=="EURO")
+  {
+  if(c=="INR")
+  {
+  d=a*82.82;
+  document.getElementById("outamt").value=d;
+  }
+  if(c=="USD")
+  {
+  d=a*1.10;
+  document.getElementById("outamt").value=d;
+  }
+  if(c=="EURO")
+  {
+  d=a*1;
+  document.getElementById("outamt").value=d;
+  }
+  if(c=="POUND")
+  {
+  d=a*0.89;
+  document.getElementById("outamt").value=d;
+  }
+  }
+
+
+  if(b=="POUND")
+  {
+  if(c=="INR")
+  {
+  d=a*93.20;
+  document.getElementById("outamt").value=d;
+  }
+  if(c=="USD")
+  {
+  d=a*1.23;
+  document.getElementById("outamt").value=d;
+  }
+  if(c=="EURO")
+  {
+  d=a*1.13;
+  document.getElementById("outamt").value=d;
+  }
+  if(c=="POUND")
+  {
+  d=a*1;
+  document.getElementById("outamt").value=d;
+  }
+  }
+  }
+  else
+  {
+  alert("Enter only numeric values!");
+  }
+  }
+        </script>
+
+    </head>
+    <body style="background-color:#fbdff0;">
+  <div class="soa"><h2>CURRENCY COVERTER</h2><br>
+        <table>
+
+            <tr>
+                <td>
+                <div class="input_field">
+                <select id="val1">
+                    <option>INR</option>
+                    <option>USD</option>
+                    <option>EURO</option>
+                    <option>POUND</option>
+                </select></div class="input_field">
+                </td>
+                <td>
+              <div class="input_field">
+                <select id="val2">
+                    <option>INR</option>
+                    <option>USD</option>
+                    <option>EURO</option>
+                    <option>POUND</option>
+                </select></div class="input_field">
+                </td>
+            </tr>
+
+            <tr>
+                <td><div class="input_field"><input type="text" placeholder="Amount" id="inamt"></div class="input_field"></td>
+                <td><div class="input_field"><input type="text" placeholder="Result" id="outamt" readonly="readonly"></div class="input_field"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align: center;"><button onclick="convert();"> CONVERT </button></td>
+            </tr>
+         </table>
+  </div>
+
+  </body>
+</html>

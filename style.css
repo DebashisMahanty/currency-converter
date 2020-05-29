@@ -1,0 +1,102 @@
+<style type="text/css">
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Josefin Sans, sans-serif;
+}
+.soa
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 350px;
+  width: 100%;
+  background:#f6c3e5 ;
+  padding: 30px;
+}
+.input_field
+{
+
+  margin-bottom: 10px;
+
+
+}
+.soa .input_field input[type="text"], .soa select
+{
+border: 1px solid red;
+width: 50%;
+padding: 5px;
+margin-top: 10px;
+font-weight: bold;
+border:0;
+background: none;
+display: block;
+margin: 20px auto;
+text-align: center;
+border: 2px solid #2ecc71;
+padding: 13px 5px;
+outline: none;
+color: gray;
+border-radius: 24px;
+
+}
+
+button
+{
+text-align: center;
+margin-top: 15px;
+background-color:#fff;
+border:2px solid #FDFEFE;
+border-radius: 25px;
+width: 50%;
+font-size: 15px;
+transition: 0.25s;
+letter-spacing: 1px;
+font-weight: bold;
+border:0;
+background: none;
+display: block;
+margin: 20px auto;
+text-align: center;
+border: 2px solid white;
+padding: 14px 40px;
+outline: none;
+color: red;
+border-radius: 24px;
+transition: 0.25s;
+cursor: pointer;
+}
+button:hover
+{
+background-color:#pink;
+color: red;
+    width: 100%;
+    letter-spacing: 15px;
+
+}
+button:focus
+{
+
+  border:2px solid red;
+
+  box-shadow: 4px 4px 2px rgb(172, 143, 175);
+}
+
+h2
+{
+letter-spacing: 4px;
+text-align: center;
+font-family: Josefin Sans, sans-serif;
+color: red;
+text-shadow: 3px 3px 4px #a5b1b1;
+}
+.soa p
+{
+letter-spacing: 2px;
+color:#FDFEFE;
+text-shadow: 3px 3px 4px #adb4b4;
+}
+    </style>
